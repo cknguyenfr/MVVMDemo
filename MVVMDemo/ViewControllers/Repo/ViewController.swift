@@ -7,12 +7,16 @@
 //
 
 import UIKit
+import RxSwift
 
 class ViewController: UIViewController {
 
+    @IBOutlet private weak var tblRepoList: UITableView!
+    private var refreshControl: UIRefreshControl!
+    fileprivate let bag = DisposeBag()
+    
     override func viewDidLoad() {
         super.viewDidLoad()
-        // Do any additional setup after loading the view, typically from a nib.
+        tblRepoList.register(cellType: RepoCell.self)
     }
 }
-

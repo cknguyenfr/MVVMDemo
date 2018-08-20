@@ -13,6 +13,7 @@ target 'MVVMDemo' do
 	pod 'Kingfisher'
 	pod 'Alamofire'
 	pod 'RxAlamofire'
+	pod 'Reusable'
 
   target 'MVVMDemoTests' do
     inherit! :search_paths
