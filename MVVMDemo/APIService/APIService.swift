@@ -6,7 +6,6 @@
 //  Copyright © 2018 Can Khac Nguyen. All rights reserved.
 //
 
-import Foundation
 import ObjectMapper
 import Alamofire
 import RxCocoa
@@ -20,6 +19,8 @@ enum APIError: Error {
 }
 
 class APIService {
+    static let shared = APIService()
+    
     private func _request(_ input: APIInputBase) -> Observable<Any> {
         let manager = Alamofire.SessionManager.default
         return manager.rx
