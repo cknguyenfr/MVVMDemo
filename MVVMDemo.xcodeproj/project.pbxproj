@@ -10,13 +10,23 @@
 		1B02F3D8212C09B500868669 /* APIOutput.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1B02F3D7212C09B500868669 /* APIOutput.swift */; };
 		1B02F3DA212C0FD300868669 /* RepoRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1B02F3D9212C0FD300868669 /* RepoRequest.swift */; };
 		1B02F3DD212C124200868669 /* RepoListRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1B02F3DC212C124200868669 /* RepoListRepository.swift */; };
+		1B02F3E1212C1E4500868669 /* RepoUseCase.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1B02F3E0212C1E4500868669 /* RepoUseCase.swift */; };
+		1B02F3E3212C213E00868669 /* RepoViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1B02F3E2212C213E00868669 /* RepoViewModel.swift */; };
+		1B291FD8212D50BF00580732 /* AppNavigator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1B291FD7212D50BF00580732 /* AppNavigator.swift */; };
+		1B291FDA212D538100580732 /* RepoNavigator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1B291FD9212D538100580732 /* RepoNavigator.swift */; };
+		1B291FDD212D587200580732 /* AppUseCase.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1B291FDC212D587200580732 /* AppUseCase.swift */; };
+		1B291FDF212D591C00580732 /* AppViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1B291FDE212D591C00580732 /* AppViewModel.swift */; };
+		1B291FE2212D694600580732 /* Storyboards.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1B291FE1212D694600580732 /* Storyboards.swift */; };
+		1B291FE5212D6C0100580732 /* Observable+.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1B291FE4212D6C0100580732 /* Observable+.swift */; };
 		1B39C74A212A59050071E12B /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1B39C749212A59050071E12B /* AppDelegate.swift */; };
-		1B39C74C212A59050071E12B /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1B39C74B212A59050071E12B /* ViewController.swift */; };
+		1B39C74C212A59050071E12B /* RepoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1B39C74B212A59050071E12B /* RepoViewController.swift */; };
 		1B39C74F212A59050071E12B /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1B39C74D212A59050071E12B /* Main.storyboard */; };
 		1B39C751212A590C0071E12B /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 1B39C750212A590C0071E12B /* Assets.xcassets */; };
 		1B39C754212A590C0071E12B /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1B39C752212A590C0071E12B /* LaunchScreen.storyboard */; };
 		1B39C75F212A590C0071E12B /* MVVMDemoTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1B39C75E212A590C0071E12B /* MVVMDemoTests.swift */; };
 		1B39C76A212A590C0071E12B /* MVVMDemoUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1B39C769212A590C0071E12B /* MVVMDemoUITests.swift */; };
+		1BA1E046212CF61B00ACA133 /* ViewModelType.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1BA1E045212CF61B00ACA133 /* ViewModelType.swift */; };
+		1BA1E048212D062B00ACA133 /* BindableType.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1BA1E047212D062B00ACA133 /* BindableType.swift */; };
 		1BB5E3C0212A664D000E664A /* Repo.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1BB5E3BF212A664D000E664A /* Repo.swift */; };
 		1BB5E3C3212A6A0C000E664A /* APIService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1BB5E3C2212A6A0C000E664A /* APIService.swift */; };
 		1BB5E3C5212A6B13000E664A /* APIInput.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1BB5E3C4212A6B13000E664A /* APIInput.swift */; };
@@ -51,9 +61,17 @@
 		1B02F3D7212C09B500868669 /* APIOutput.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIOutput.swift; sourceTree = "<group>"; };
 		1B02F3D9212C0FD300868669 /* RepoRequest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RepoRequest.swift; sourceTree = "<group>"; };
 		1B02F3DC212C124200868669 /* RepoListRepository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RepoListRepository.swift; sourceTree = "<group>"; };
+		1B02F3E0212C1E4500868669 /* RepoUseCase.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RepoUseCase.swift; sourceTree = "<group>"; };
+		1B02F3E2212C213E00868669 /* RepoViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RepoViewModel.swift; sourceTree = "<group>"; };
+		1B291FD7212D50BF00580732 /* AppNavigator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppNavigator.swift; sourceTree = "<group>"; };
+		1B291FD9212D538100580732 /* RepoNavigator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RepoNavigator.swift; sourceTree = "<group>"; };
+		1B291FDC212D587200580732 /* AppUseCase.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppUseCase.swift; sourceTree = "<group>"; };
+		1B291FDE212D591C00580732 /* AppViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppViewModel.swift; sourceTree = "<group>"; };
+		1B291FE1212D694600580732 /* Storyboards.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Storyboards.swift; sourceTree = "<group>"; };
+		1B291FE4212D6C0100580732 /* Observable+.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Observable+.swift"; sourceTree = "<group>"; };
 		1B39C746212A59050071E12B /* MVVMDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MVVMDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		1B39C749212A59050071E12B /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		1B39C74B212A59050071E12B /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		1B39C74B212A59050071E12B /* RepoViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RepoViewController.swift; sourceTree = "<group>"; };
 		1B39C74E212A59050071E12B /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		1B39C750212A590C0071E12B /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		1B39C753212A590C0071E12B /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -64,6 +82,8 @@
 		1B39C765212A590C0071E12B /* MVVMDemoUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = MVVMDemoUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		1B39C769212A590C0071E12B /* MVVMDemoUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MVVMDemoUITests.swift; sourceTree = "<group>"; };
 		1B39C76B212A590C0071E12B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		1BA1E045212CF61B00ACA133 /* ViewModelType.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewModelType.swift; sourceTree = "<group>"; };
+		1BA1E047212D062B00ACA133 /* BindableType.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BindableType.swift; sourceTree = "<group>"; };
 		1BB5E3BF212A664D000E664A /* Repo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Repo.swift; sourceTree = "<group>"; };
 		1BB5E3C2212A6A0C000E664A /* APIService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIService.swift; sourceTree = "<group>"; };
 		1BB5E3C4212A6B13000E664A /* APIInput.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIInput.swift; sourceTree = "<group>"; };
@@ -117,6 +137,51 @@
 			path = Repositories;
 			sourceTree = "<group>";
 		};
+		1B02F3DF212C1DEC00868669 /* Scene */ = {
+			isa = PBXGroup;
+			children = (
+				1B291FE0212D691300580732 /* Storyboard */,
+				1BB5E3CE212A77EB000E664A /* Repo */,
+				1B291FD6212D509A00580732 /* App */,
+			);
+			path = Scene;
+			sourceTree = "<group>";
+		};
+		1B291FD6212D509A00580732 /* App */ = {
+			isa = PBXGroup;
+			children = (
+				1B291FD7212D50BF00580732 /* AppNavigator.swift */,
+				1B291FDC212D587200580732 /* AppUseCase.swift */,
+				1B291FDE212D591C00580732 /* AppViewModel.swift */,
+			);
+			path = App;
+			sourceTree = "<group>";
+		};
+		1B291FDB212D538900580732 /* Cell */ = {
+			isa = PBXGroup;
+			children = (
+				1BB5E3CF212A782D000E664A /* RepoCell.swift */,
+				1BB5E3D0212A782D000E664A /* RepoCell.xib */,
+			);
+			path = Cell;
+			sourceTree = "<group>";
+		};
+		1B291FE0212D691300580732 /* Storyboard */ = {
+			isa = PBXGroup;
+			children = (
+				1B291FE1212D694600580732 /* Storyboards.swift */,
+			);
+			path = Storyboard;
+			sourceTree = "<group>";
+		};
+		1B291FE3212D6BF200580732 /* Extension */ = {
+			isa = PBXGroup;
+			children = (
+				1B291FE4212D6C0100580732 /* Observable+.swift */,
+			);
+			path = Extension;
+			sourceTree = "<group>";
+		};
 		1B39C73D212A59050071E12B = {
 			isa = PBXGroup;
 			children = (
@@ -142,11 +207,12 @@
 		1B39C748212A59050071E12B /* MVVMDemo */ = {
 			isa = PBXGroup;
 			children = (
+				1BA1E043212CF60100ACA133 /* Architecture */,
 				1BB5E3C8212A733E000E664A /* Commom */,
 				1BB5E3C1212A69FC000E664A /* APIService */,
 				1B02F3DB212C121F00868669 /* Repositories */,
 				1BB5E3BE212A63A6000E664A /* Models */,
-				1BB5E3CC212A7441000E664A /* ViewControllers */,
+				1B02F3DF212C1DEC00868669 /* Scene */,
 				1B39C749212A59050071E12B /* AppDelegate.swift */,
 				1B39C74D212A59050071E12B /* Main.storyboard */,
 				1B39C750212A590C0071E12B /* Assets.xcassets */,
@@ -172,6 +238,24 @@
 				1B39C76B212A590C0071E12B /* Info.plist */,
 			);
 			path = MVVMDemoUITests;
+			sourceTree = "<group>";
+		};
+		1BA1E043212CF60100ACA133 /* Architecture */ = {
+			isa = PBXGroup;
+			children = (
+				1B291FE3212D6BF200580732 /* Extension */,
+				1BA1E044212CF60B00ACA133 /* ViewModel */,
+			);
+			path = Architecture;
+			sourceTree = "<group>";
+		};
+		1BA1E044212CF60B00ACA133 /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				1BA1E045212CF61B00ACA133 /* ViewModelType.swift */,
+				1BA1E047212D062B00ACA133 /* BindableType.swift */,
+			);
+			path = ViewModel;
 			sourceTree = "<group>";
 		};
 		1BB5E3BE212A63A6000E664A /* Models */ = {
@@ -202,20 +286,14 @@
 			path = Commom;
 			sourceTree = "<group>";
 		};
-		1BB5E3CC212A7441000E664A /* ViewControllers */ = {
-			isa = PBXGroup;
-			children = (
-				1BB5E3CE212A77EB000E664A /* Repo */,
-			);
-			path = ViewControllers;
-			sourceTree = "<group>";
-		};
 		1BB5E3CE212A77EB000E664A /* Repo */ = {
 			isa = PBXGroup;
 			children = (
-				1B39C74B212A59050071E12B /* ViewController.swift */,
-				1BB5E3CF212A782D000E664A /* RepoCell.swift */,
-				1BB5E3D0212A782D000E664A /* RepoCell.xib */,
+				1B291FDB212D538900580732 /* Cell */,
+				1B02F3E0212C1E4500868669 /* RepoUseCase.swift */,
+				1B39C74B212A59050071E12B /* RepoViewController.swift */,
+				1B02F3E2212C213E00868669 /* RepoViewModel.swift */,
+				1B291FD9212D538100580732 /* RepoNavigator.swift */,
 			);
 			path = Repo;
 			sourceTree = "<group>";
@@ -384,23 +462,31 @@
 				"${SRCROOT}/Pods/Target Support Files/Pods-MVVMDemo/Pods-MVVMDemo-frameworks.sh",
 				"${BUILT_PRODUCTS_DIR}/Action/Action.framework",
 				"${BUILT_PRODUCTS_DIR}/Alamofire/Alamofire.framework",
+				"${BUILT_PRODUCTS_DIR}/Differentiator/Differentiator.framework",
 				"${BUILT_PRODUCTS_DIR}/Kingfisher/Kingfisher.framework",
+				"${BUILT_PRODUCTS_DIR}/NSObject+Rx/NSObject_Rx.framework",
 				"${BUILT_PRODUCTS_DIR}/ObjectMapper/ObjectMapper.framework",
 				"${BUILT_PRODUCTS_DIR}/Reusable/Reusable.framework",
 				"${BUILT_PRODUCTS_DIR}/RxAlamofire/RxAlamofire.framework",
 				"${BUILT_PRODUCTS_DIR}/RxCocoa/RxCocoa.framework",
+				"${BUILT_PRODUCTS_DIR}/RxDataSources/RxDataSources.framework",
 				"${BUILT_PRODUCTS_DIR}/RxSwift/RxSwift.framework",
+				"${BUILT_PRODUCTS_DIR}/Then/Then.framework",
 			);
 			name = "[CP] Embed Pods Frameworks";
 			outputPaths = (
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Action.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Alamofire.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Differentiator.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Kingfisher.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/NSObject_Rx.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/ObjectMapper.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Reusable.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/RxAlamofire.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/RxCocoa.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/RxDataSources.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/RxSwift.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Then.framework",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
@@ -470,14 +556,24 @@
 			files = (
 				1BB5E3C0212A664D000E664A /* Repo.swift in Sources */,
 				1B02F3DA212C0FD300868669 /* RepoRequest.swift in Sources */,
-				1B39C74C212A59050071E12B /* ViewController.swift in Sources */,
+				1B291FE5212D6C0100580732 /* Observable+.swift in Sources */,
+				1B291FDF212D591C00580732 /* AppViewModel.swift in Sources */,
+				1B02F3E3212C213E00868669 /* RepoViewModel.swift in Sources */,
+				1B39C74C212A59050071E12B /* RepoViewController.swift in Sources */,
+				1BA1E048212D062B00ACA133 /* BindableType.swift in Sources */,
 				1BB5E3C3212A6A0C000E664A /* APIService.swift in Sources */,
 				1BB5E3CA212A7355000E664A /* URLs.swift in Sources */,
+				1BA1E046212CF61B00ACA133 /* ViewModelType.swift in Sources */,
 				1BB5E3C7212A7234000E664A /* ResponseError.swift in Sources */,
+				1B291FD8212D50BF00580732 /* AppNavigator.swift in Sources */,
 				1B39C74A212A59050071E12B /* AppDelegate.swift in Sources */,
+				1B02F3E1212C1E4500868669 /* RepoUseCase.swift in Sources */,
 				1B02F3D8212C09B500868669 /* APIOutput.swift in Sources */,
 				1B02F3DD212C124200868669 /* RepoListRepository.swift in Sources */,
 				1BB5E3C5212A6B13000E664A /* APIInput.swift in Sources */,
+				1B291FE2212D694600580732 /* Storyboards.swift in Sources */,
+				1B291FDD212D587200580732 /* AppUseCase.swift in Sources */,
+				1B291FDA212D538100580732 /* RepoNavigator.swift in Sources */,
 				1BB5E3D1212A782D000E664A /* RepoCell.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

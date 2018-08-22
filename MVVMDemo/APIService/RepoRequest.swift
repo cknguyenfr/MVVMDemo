@@ -15,7 +15,7 @@ final class RepoListInput: APIInputBase {
 }
 
 final class RepoListOutput: APIOutputBase {
-    private var repos: [Repo]?
+    var repos = [Repo]()
     
     override func mapping(map: Map) {
         super.mapping(map: map)

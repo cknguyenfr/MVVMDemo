@@ -14,6 +14,9 @@ target 'MVVMDemo' do
 	pod 'Alamofire'
 	pod 'RxAlamofire'
 	pod 'Reusable'
+	pod 'Then'
+	pod 'RxDataSources'
+	pod 'NSObject+Rx'
 
   target 'MVVMDemoTests' do
     inherit! :search_paths
