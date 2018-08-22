@@ -3,7 +3,10 @@ PODS:
     - RxCocoa (~> 4.2.0)
     - RxSwift (~> 4.2.0)
   - Alamofire (4.7.3)
+  - Differentiator (3.0.2)
   - Kingfisher (4.8.1)
+  - "NSObject+Rx (4.3.0)":
+    - RxSwift (~> 4.0)
   - ObjectMapper (3.3.0)
   - Reusable (4.0.2):
     - Reusable/Storyboard (= 4.0.2)
@@ -17,39 +20,55 @@ PODS:
     - RxSwift (~> 4)
   - RxCocoa (4.2.0):
     - RxSwift (~> 4.0)
+  - RxDataSources (3.0.2):
+    - Differentiator (~> 3.0)
+    - RxCocoa (~> 4.0)
+    - RxSwift (~> 4.0)
   - RxSwift (4.2.0)
+  - Then (2.3.0)
 
 DEPENDENCIES:
   - Action
   - Alamofire
   - Kingfisher
+  - "NSObject+Rx"
   - ObjectMapper
   - Reusable
   - RxAlamofire
   - RxCocoa
+  - RxDataSources
   - RxSwift
+  - Then
 
 SPEC REPOS:
   https://github.com/cocoapods/specs.git:
     - Action
     - Alamofire
+    - Differentiator
     - Kingfisher
+    - "NSObject+Rx"
     - ObjectMapper
     - Reusable
     - RxAlamofire
     - RxCocoa
+    - RxDataSources
     - RxSwift
+    - Then
 
 SPEC CHECKSUMS:
   Action: 3d9486d3da02b572b0a034b6c49ac4c3fbcc8b63
   Alamofire: c7287b6e5d7da964a70935e5db17046b7fde6568
+  Differentiator: a87be69eba49ec4ab460c7671143ee3a9eececfd
   Kingfisher: 868c1149679a7ab6869be118faa9b5aed154aaf0
+  "NSObject+Rx": 9a5eeff5e08156f849fa973514456f28eef08742
   ObjectMapper: b612bf8c8e99c4dc0bb6013a51f7c27966ed5da9
   Reusable: 584a5629747c52e0f6a77841b400dc2643f6fa0f
   RxAlamofire: 87a9c588541210cc3e4a1f843ccc3ecf3eb98b31
   RxCocoa: 0b54909c902e1e581212a03e690bbd94032d8baa
+  RxDataSources: cb7c31e652a87ebb919da45f716bbb87b3765f6b
   RxSwift: 99e10317ddfcc7fbe01356aafd118fde4a0be104
+  Then: ee21c97b85ff6062b9b0080c9abb1eea46743345
 
-PODFILE CHECKSUM: baa814de4e47caca2133ed8ec242b39623c228fe
+PODFILE CHECKSUM: 3b4e1662c0539be1593f4d84387a46f49479f167
 
 COCOAPODS: 1.5.3
