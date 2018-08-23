@@ -17,6 +17,10 @@ target 'MVVMDemo' do
 	pod 'Then'
 	pod 'RxDataSources'
 	pod 'NSObject+Rx'
+	pod 'MJRefresh'
+	pod 'MKProgress'
+	pod 'OrderedSet'
+	pod 'MBProgressHUD'
 
   target 'MVVMDemoTests' do
     inherit! :search_paths

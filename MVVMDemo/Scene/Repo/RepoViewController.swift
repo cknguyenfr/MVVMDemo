@@ -16,7 +16,7 @@ import Reusable
 
 class RepoViewController: UIViewController, BindableType {
     
-    @IBOutlet private weak var tblRepoList: UITableView!
+    @IBOutlet weak var tblRepoList: RefreshTableView!
     var viewModel: RepoViewModel!
     
     override func viewDidLoad() {
@@ -37,17 +37,41 @@ class RepoViewController: UIViewController, BindableType {
     
     func bindViewModel() {
         let input = RepoViewModel.Input(
-            loadTrigger: Driver.just(())
+            loadTrigger: Driver.just(()),
+            loadMoreTrigger: tblRepoList.loadMoreBottomTrigger,
+            reloadTrigger: tblRepoList.loadMoreTopTrigger,
+            selectedTrigger: tblRepoList.rx.itemSelected.asDriver()
         )
         let output = viewModel.transform(input)
         output.repoList
             .drive(tblRepoList.rx.items) { tableView, index, repo in
                 return tableView.dequeueReusableCell(for: IndexPath(row: index, section: 0), cellType: RepoCell.self).then({
-                    if let name = repo.name, let urlString = repo.avatarURLString {
+                    if let name = repo.repo.name, let urlString = repo.repo.avatarURLString {
                         $0.fillData(imageUrl: urlString, name: name)
                     }
                 })
             }
+            .disposed(by: rx.disposeBag)
+        output.error
+            .drive(rx.error)
+            .disposed(by: rx.disposeBag)
+        output.refreshing
+            .drive(tblRepoList.loadingMoreTop)
+            .disposed(by: rx.disposeBag)
+        output.loading
+            .drive(rx.isLoading)
+            .disposed(by: rx.disposeBag)
+        output.loadingMore
+            .drive(tblRepoList.loadingMoreBottom)
+            .disposed(by: rx.disposeBag)
+        output.fetchItems
+            .drive()
+            .disposed(by: rx.disposeBag)
+        output.selectedRepo
+            .drive()
+            .disposed(by: rx.disposeBag)
+        output.selectedRepo
+            .drive()
             .disposed(by: rx.disposeBag)
     }
 }

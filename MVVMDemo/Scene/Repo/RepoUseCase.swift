@@ -7,16 +7,22 @@
 //
 
 import RxSwift
+import OrderedSet
 
 protocol RepoUsecaseType {
-    func getRepoList() -> Observable<[Repo]>
+    func getRepoList() -> Observable<PagingInfo<Repo>>
+    func loadMoreRepoList(page: Int) -> Observable<PagingInfo<Repo>>
 }
 
 struct RepoUsecase: RepoUsecaseType {
-    func getRepoList() -> Observable<[Repo]> {
+    func getRepoList() -> Observable<PagingInfo<Repo>> {
+        return loadMoreRepoList(page: 1)
+    }
+    
+    func loadMoreRepoList(page: Int) -> Observable<PagingInfo<Repo>> {
         let repositories = RepoRequestRepositories()
-        let request = RepoListInput()
+        let request = RepoListInput(page: page, perPage: 10)
         return repositories.getRepoList(input: request)
-            .map({ $0.repos })
+            .map({ PagingInfo(page: 1, items: OrderedSet<Repo>(sequence: $0.repos))})
     }
 }

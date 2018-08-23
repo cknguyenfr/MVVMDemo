@@ -9,8 +9,13 @@
 import ObjectMapper
 
 final class RepoListInput: APIInputBase {
-    init() {
-        super.init(urlString: URLs.repoList, parameters: nil, requestType: .get)
+    init(page: Int, perPage: Int) {
+        let params: [String: Any] = [
+            "q": "language:swift",
+            "per_page": perPage,
+            "page": page,
+            ]
+        super.init(urlString: URLs.repoList, parameters: params, requestType: .get)
     }
 }
 

@@ -8,6 +8,7 @@
 
 import Foundation
 import ObjectMapper
+import Then
 
 class Repo: Mappable {
     var id = 0
@@ -40,3 +41,5 @@ class Repo: Mappable {
         avatarURLString <- map["owner.avatar_url"]
     }
 }
+
+extension Repo: Then, HasID, Hashable {}
